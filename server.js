@@ -87,6 +87,8 @@ app.use('/api',feedsRoutes);
 app.use('/api',buyerOrdersRoutes);
 
 
-app.listen(port, () => {
-  console.log("Server started at port: " + port);
-});
+// app.listen(port, () => {
+//   console.log("Server started at port: " + port);
+// });
+
+module.exports = app;
