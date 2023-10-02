@@ -6,10 +6,10 @@ const cors = require("cors");
 const app = express();
 const port =  process.env.PORT || 8080;
 require('dotenv').config();
-const adminRoutes = require("./routes/adminRoutes")
+// const adminRoutes = require("./routes/adminRoutes")
 const userRoutes = require("./routes/userRoutes");
 const productRoutes = require("./routes/productRoutes");
-const feedsRoutes = require("./routes/feedsRoutes");
+// const feedsRoutes = require("./routes/feedsRoutes");
 const buyerOrdersRoutes = require("./routes/buyerOrdersRoutes");
 const sellerOrdersRoutes = require("./routes/sellerOrdersRoutes");
 const wishlistRoutes = require("./routes/wishlistRoutes");
@@ -79,11 +79,11 @@ app.use("/uploads", express.static(path.join(__dirname, "../shared/uploads")));
 
 
 app.use('/api',wishlistRoutes);
-app.use('/api',adminRoutes);
+// app.use('/api',adminRoutes);
 app.use('/api',userRoutes);
 app.use('/api',sellerOrdersRoutes);
 app.use('/api',productRoutes);
-app.use('/api',feedsRoutes);
+// app.use('/api',feedsRoutes);
 app.use('/api',buyerOrdersRoutes);
 
 
@@ -91,4 +91,3 @@ app.listen(port, () => {
   console.log("Server started at port: " + port);
 });
 
-module.exports = app;

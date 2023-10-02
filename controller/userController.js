@@ -74,40 +74,8 @@ exports.postUserState = async(req, res, next) => {
     return res.json({ message: "User exist", type: decoded.type });
 };
 
-// exports.postRegister = (req, res, next) => {
-//   console.log(req.body);
-//   const user = new UserModal({
-//     name: req.body.name,
-//     password: req.body.password,
-//     profilePicUrl: req.file?.path
-//       .toString()
-//       .replace(/\\/g, "/")
-//       .split("shared/")
-//       .slice(1)
-//       .join(""),
-//     email: req.body.email,
-//     confirmPassword: req.body.confirmPassword,
-//     mobile: req.body.mobile,
-//     address: req.body.address,
-//     pincode: req.body.pincode,
-//     blocked: false,
-//     type: req.body.type,
-//   });
-
-//   user
-//     .save()
-//     .then((data) => {
-//       console.log(data);
-//       res.status(200).json(data);
-//     })
-//     .catch((err) => {
-//       res.status(401).json({ message: err });
-//     });
-// };
 
 exports.postRegister = (req, res, next) => {
-  // console.log(req.body);
-  // console.log(req.file);
   
   const user = new UserModal({
     name: req.body.name,
