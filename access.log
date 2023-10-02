@@ -32,3 +32,5 @@
 ::ffff:127.0.0.1 - - [02/Oct/2023:08:45:57 +0000] "GET /api/products HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0"
 ::ffff:127.0.0.1 - - [02/Oct/2023:08:45:57 +0000] "GET /images/2023-08-31T18_50_51.689Z-InShot_20230507_182857235.jpg HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0"
 ::ffff:127.0.0.1 - - [02/Oct/2023:08:45:57 +0000] "GET /images/2023-09-24T12_37_44.526Z-fsd1_4.png HTTP/1.1" 200 25872 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0"
+::ffff:127.0.0.1 - - [02/Oct/2023:09:14:52 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0"
+::ffff:127.0.0.1 - - [02/Oct/2023:09:15:00 +0000] "GET /api/products HTTP/1.1" 200 25179 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0"
