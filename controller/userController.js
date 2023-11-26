@@ -48,7 +48,8 @@ exports.postUser = (req, res, next) => {
       return res.status(401).json({ message: "User does not exist" });
     }
 
-    
+    // console.log(user);
+ 
     bcrypt.compare(req.body.password, user.password).then((doMatch) => {
       if (doMatch) {
         console.log("user ye hai",user);
