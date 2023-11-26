@@ -3,6 +3,7 @@ const ProductModal = require("../models/productModal");
 const sellerOrdersModal = require("../models/sellerOrdersModal");
 const jwt = require("jsonwebtoken");
 
+
 // GET Methods
 exports.getOrders = async(req, res) => {
   const token=req.body.token;
